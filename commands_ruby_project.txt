@@ -1,0 +1,220 @@
+davisrixi@railsweb1:~/workspace $ git status
+davisrixi@railsweb1:~/workspace $ git status
+fatal: Not a git repository (or any of the parent directories): .git
+davisrixi@railsweb1:~/workspace $ cd Development/
+#verificando 
+davisrixi@railsweb1:~/workspace/Development $ ruby -v
+ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+davisrixi@railsweb1:~/workspace/Development $ rails -v
+Rails 4.2.1
+#starting mysql
+davisrixi@railsweb1:~/workspace/Development $ sudo service mysql start 
+ * Starting MySQL database server mysqld
+   ...done.
+ * Checking for tables which need an upgrade, are corrupt or were 
+not closed cleanly.
+
+#iniciando proyecto
+davisrixi@railsweb1:~/workspace $ git status
+davisrixi@railsweb1:~/workspace $ git status
+fatal: Not a git repository (or any of the parent directories): .git
+davisrixi@railsweb1:~/workspace $ cd Development/
+davisrixi@railsweb1:~/workspace/Development $ ruby -v
+ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+davisrixi@railsweb1:~/workspace/Development $ rails -v
+Rails 4.2.1
+davisrixi@railsweb1:~/workspace/Development $ sudo service mysql start 
+ * Starting MySQL database server mysqld
+   ...done.
+ * Checking for tables which need an upgrade, are corrupt or were 
+not closed cleanly.
+
+#New project
+davisrixi@railsweb1:~/workspace/Development $ rails new blogs -d mysql
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+
+
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Installing json 1.8.3
+Installing minitest 5.7.0
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.1
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.2
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.6
+Using loofah 2.0.2
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.1
+Installing rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.1
+Using globalid 0.3.5
+Using activejob 4.2.1
+Using mime-types 2.6.1
+Using mail 2.6.3
+Using actionmailer 4.2.1
+Using activemodel 4.2.1
+Using arel 6.0.0
+Using activerecord 4.2.1
+Installing debug_inspector 0.0.2
+Installing binding_of_caller 0.7.2
+Using bundler 1.8.4
+Installing columnize 0.9.0
+Installing byebug 5.0.0
+Installing coffee-script-source 1.9.1.1
+Installing execjs 2.5.2
+Installing coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.1
+Installing coffee-rails 4.1.0
+Installing multi_json 1.11.2
+Installing jbuilder 2.3.0
+Installing jquery-rails 4.0.4
+Installing mysql2 0.3.18
+Using sprockets 3.2.0
+Installing sprockets-rails 2.3.2
+Using rails 4.2.1
+Using rdoc 4.2.0
+Installing sass 3.4.15
+Installing tilt 1.4.1
+Installing sass-rails 5.0.3
+Installing sdoc 0.4.1
+Installing spring 1.3.6
+Installing turbolinks 2.5.3
+Installing uglifier 2.7.1
+Installing web-console 2.1.3  
+Bundle complete! 12 Gemfile dependencies, 54 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+
+#change position to project
+davisrixi@railsweb1:~/workspace/Development $ cd blogs/
+
+
+# ----> file /config/routes > quien se va a encargar de las llamadas de urls
+
+#create database
+davisrixi@railsweb1:~/workspace/Development/blogs $ 
+
+#start rails server
+davisrixi@railsweb1:~/workspace/Development/blogs $ rails s
+#en cloud9.io
+davisrixi@railsweb1:~/workspace/Development/blogs $ rails s -p $PORT -b $IP
+
+#create index file
+davisrixi@railsweb1:~/workspace/Development/blogs (master) $ rails g controller Home index
+
+#mapping attributes
+davisrixi@railsweb1:~/workspace/Development/blogs (master) $ rails g scaffold blogs name:string about:text
+
+
+#add gems
+gem 'annotate'
+davisrixi@railsweb1:~/workspace/Development/blogs (master) $ bundle
+davisrixi@railsweb1:~/workspace/Development/blogs (master) $ rake db:migrate
+davisrixi@railsweb1:~/workspace/Development/blogs (master) $ annotate
+Annotated (1): Blog
+#restart server
+
+#todas las rutas  
+davisrixi@railsweb1:~/workspace/Development/blogs (master) $ rake routes
+
+#create posts
+davisrixi@railsweb1:~/workspace/Development/blogs (master) $ rails g scaffold posts title:string content:text blog:references
+
+
+
+
+
+
+
+
