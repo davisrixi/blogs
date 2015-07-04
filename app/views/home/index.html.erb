@@ -1,2 +1,10 @@
 <h1>Home</h1>
 <p>Bienvenido</p>
+
+<tbody>
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%= link_to blog.name, blog %></td>
+  </tr>
+<% end %>
+</tbody>
